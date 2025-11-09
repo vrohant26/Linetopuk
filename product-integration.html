@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/svgs/Logo-blue.svg" />
+
+    <title>Product integration</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body data-page="product-integration">
+    <header id="header"></header>
+    <main>
+      <section id="hero" class="hero-height flex section-padding">
+        <div class="row flex w-100 justify-space-between">
+          <a href="#more">
+            <div class="flex center gap-1rem">
+              <p class="text-white fs-sm bold">
+                Discover how indoor and outdoor counters<br />
+                capture real visitor insights.
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 2048 2048"
+              >
+                <path
+                  fill="#fff"
+                  d="M1024 0q141 0 272 36t245 103t207 160t160 208t103 245t37 272q0 141-36 272t-103 245t-160 207t-208 160t-245 103t-272 37q-141 0-272-36t-245-103t-207-160t-160-208t-103-244t-37-273q0-141 36-272t103-245t160-207t208-160T751 37t273-37m0 1920q123 0 237-32t214-90t182-141t140-181t91-214t32-238q0-123-32-237t-90-214t-141-182t-181-140t-214-91t-238-32q-123 0-237 32t-214 90t-182 141t-140 181t-91 214t-32 238q0 123 32 237t90 214t141 182t181 140t214 91t238 32m531-1005l90 90l-620 622l-622-622l90-90l467 467V384h129v997z"
+                />
+              </svg>
+            </div>
+          </a>
+          <h2 class="fs-xxl w-50 text-white">Product Integration</h2>
+        </div>
+      </section>
+      <section
+        id="more"
+        class="section-padding flex direction-column gap-2rem justify-center bg-primary"
+      >
+        <p class="fs-lg text-primary-light">
+          This page showcases examples of both
+          <span class="text-white">outdoor and indoor visitor counters</span>.
+          Good counter locations record predictable visitor behavior, ideally
+          where one movement equals one visitor. When people enter and exit via
+          the same route, data is calibrated (usually halved) to reflect true
+          footfall.<br /><br />
+          Indoor counters may monitor doorways or specific areas like exhibits
+          or cafés, with data transmitted to PCs or stored locally for later
+          download. The banner photos show sensors installed on a mountain-bike
+          footbridge and an indoor doorway setup.
+        </p>
+      </section>
+
+      <!-- Counter types: Indoor / Outdoor tabs -->
+      <section id="counter-types" class="section-padding">
+        <div class="container">
+          <div class="flex center">
+            <div class="tabs" role="tablist" aria-label="Counter types">
+              <button
+                id="tab-indoor"
+                class="tab-button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-indoor"
+              >
+                Outdoor counters
+              </button>
+              <button
+                id="tab-outdoor"
+                class="tab-button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-outdoor"
+              >
+                Indoor counters
+              </button>
+            </div>
+          </div>
+          <div
+            id="panel-indoor"
+            class="tab-panel"
+            role="tabpanel"
+            aria-labelledby="tab-indoor"
+          >
+            <div
+              class="row section-heading text-primary padding-top-bottom gap-1rem align-end"
+            >
+              <h2 class="fs-xl medium">OUTDOORS COUNTERS</h2>
+              <p style="line-height: 40px" class="fs-sm">
+                FOR WALKERS, CYCLISTS, CARS
+              </p>
+            </div>
+
+            <div class="product-integration-grid">
+              <div class="product-integration-section1 mb-4rem">
+                <img src="/assets/images/Countryside+footpaths.webp" alt="" />
+              </div>
+
+              <div class="product-integration-section2">
+                <h4 class="fs-lg">Countryside footpaths</h4>
+                <p class="fs-sm text-light">
+                  An ideal visitor counting situation is where people are in the
+                  middle of an inescapable section of track between two access
+                  points.  Coast paths, as in the photo above, tend to be like
+                  this.<br /><br />
+                  A narrow eroded strip often develops between grass verges
+                  which suits a buried pressure slab sensor.  All the better if
+                  the path is edged by shrubs to keep people walking on a
+                  ‘desire line’ and providing a way to conceal a Pelicase in
+                  prickly undergrowth.<br /><br />
+                  Exploit path furniture like boxed steps or kissing gates that
+                  make people walk in single file even if only for a short
+                  distance when using a slab sensor.<br /><br />
+                  Narrow swing gates (hunting gates) can be problematic as
+                  counters since the first person takes a long time to open it
+                  and pass compared to others.
+                </p>
+              </div>
+
+              <div class="product-integration-section3">
+                <h4 class="fs-lg">Fencing at lakes, harbours, promenades</h4>
+                <p class="fs-sm text-light">
+                  Canal or lake paths are similar to coast paths but tend to be
+                  much wider which might not suit one slab sensor. Rivers also
+                  might flood, perhaps severely depending on the level of
+                  surrounding ground.  A body-heat sensor with logger can be put
+                  into a elevated box on various styles of metal or wooden
+                  fencing, or forestry road barriers, or on stone or brick
+                  walls, or inside a locked pillar in the path verge.  This
+                  keeps the counter equipment above expected floodwater
+                  levels.<br /><br />
+                  Sometimes path furniture, fence posts and stone walls provide
+                  a way to hide a body-heat sensor, but beware tall swaying
+                  weeds which can block its view in high summer or add false
+                  counts when strong sun and wind creates fast-moving shadows. 
+                  So look for naturally weed-free locations
+                </p>
+              </div>
+
+              <div class="product-integration-section4 mb-4rem">
+                <img
+                  src="/assets/images/Fencing at lakes, harbours, promenades.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="product-integration-section5 mb-4rem">
+                <img src="/assets/images/Bicycle+trails.webp" alt="" />
+              </div>
+
+              <div class="product-integration-section6">
+                <h4 class="fs-lg">Bicycle trails</h4>
+                <p class="fs-sm text-light">
+                  Forestry sport mountain bike trails with gravel surfaced
+                  tracks 1-2m wide suit buried slab pressure sensors, as in the
+                  footpath photo top left. Slab sensors can be configured for
+                  multi-purpose trails to detect the ‘bump-bump’ sound from the
+                  two wheels of bikes passing over and to ignore different kind
+                  of ground sounds made by walkers.<br /><br />
+
+                  Tarmac or concrete surfaces are best fitted with inductive
+                  loop sensors to detect bikes, as above with a pillar, but
+                  loops involve a lot of work to install.  Magnetometers are
+                  much easier to install at barriers where cyclists ride on
+                  narrow line and on unsealed tracks
+                </p>
+              </div>
+
+              <div class="product-integration-section7">
+                <h4 class="fs-lg">Streets in towns</h4>
+                <p class="fs-sm text-light">
+                  t is usually impractical to put a people counter on every
+                  pavement in a town, nor can one know how many times each
+                  visitor walked along the same street from shop to shop.  So
+                  street footfall is also an ‘activity index’ when it comes to
+                  tracking in town centres.<br /><br />
+
+                  Nevertheless, the information gained can be insightful in
+                  terms of profiling certain streets by time of day or day of
+                  week, or seasonally, or annual for shopper trends.  Projects
+                  located in regeneration areas will compare footfall with
+                  investment, or used to compare several different towns’
+                  footfall across a whole county
+                </p>
+              </div>
+
+              <div class="product-integration-section8 mb-4rem">
+                <img src="/assets/images/Streets in towns.webp" alt="" />
+              </div>
+
+              <div class="product-integration-section9 mb-4rem">
+                <img src="/assets/images/Parks and gardens.webp" alt="" />
+              </div>
+
+              <div class="product-integration-section10">
+                <h4 class="fs-lg">Parks and gardens</h4>
+                <p class="fs-sm text-light">
+                  Municipal park refurbishment has become more common thanks to
+                  Lottery funding.  The typical project follows the visitor
+                  numbers before, during and after the park works, hoping to
+                  evidence increased usage<br /><br />
+
+                  As in town streets, the main method is body-heat sensors in
+                  boxes on lamp posts or street signs fencing.  Locked metal
+                  pillars of the type used to house street lighting controls are
+                  also useful<br /><br />
+
+                  National Trust properties are low risk for vandalism so these
+                  also suit people counters in metal boxes on fixed objects like
+                  fences and small gates<br /><br />
+                </p>
+              </div>
+
+              <div class="product-integration-section11">
+                <h4 class="fs-lg">Nature reserves, uplands</h4>
+                <p class="fs-sm text-light">
+                  Nature reserves have defined access points, usually off a car
+                  park, but then internally they are simply wide open spaces
+                  where people can wander around at will.  On RSPB reserves that
+                  is exactly what typical visitors will do when searching for
+                  the different birds so consider counting cars with a loop, as
+                  seen in the photo above, or with a magnetometer.  Putting a
+                  car sensor on a dead-end access road leading to the main car
+                  park is equally effective. <br /><br />
+
+                  There can be many paths up or down hills or mountains and
+                  circular walk possibilities.  Where car parking is informal or
+                  in a long layby, rather than focus on cars you can instead put
+                  a pedestrian counter near the main walk starting point.  This
+                  will provide an ‘activity index’ rather than true footfall
+                  since you cannot know how many people would return by the same
+                  way
+                </p>
+              </div>
+
+              <div class="product-integration-section12 mb-4rem">
+                <img
+                  src="/assets/images/Nature reserves, uplands.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="panel-outdoor"
+            class="tab-panel"
+            role="tabpanel"
+            aria-labelledby="tab-outdoor"
+            hidden
+          >
+            <div
+              class="row section-heading text-primary padding-top-bottom gap-1rem align-end"
+            >
+              <h2 class="fs-xl medium">INDOORS COUNTERS</h2>
+              <p style="line-height: 40px" class="fs-sm">
+                FOR MUSEUM, REATAIL STORES, PUBLIC LIBRARIES
+              </p>
+            </div>
+
+            <div class="product-integration-grid">
+              <div class="product-integration-section1 mb-4rem">
+                <img src="/assets/images/countryside centre.jpg" alt="" />
+              </div>
+
+              <div class="product-integration-section2">
+                <h4 class="fs-lg">Countryside centre</h4>
+                <p class="fs-sm text-light">
+                  The Forestry Commission, Local Authorities and National Parks
+                  often run visitor centres. Counting cars is an obvious
+                  approach, but not everyone arriving at the site will make use
+                  of the building while others may use it more than once during
+                  their visit.<br /><br />
+
+                  Doors that open outwards, as in the photo above, and sliding
+                  doors both suit a break-beam sensor placed close by on the
+                  inside walls. Sometimes a lobby area between outer and inner
+                  doors can be spanned by an optical beam. Security is rarely an
+                  issue since typical buildings are supervised during the day
+                  and locked by night
+                </p>
+              </div>
+
+              <div class="product-integration-section3">
+                <h4 class="fs-lg">
+                  Unstaffed exhibition or bird-hide style building
+                </h4>
+                <p class="fs-sm text-light">
+                  Canal or lake paths are similar to coast paths but tend to be
+                  much wider which might not suit one slab sensor. Rivers also
+                  might flood, perhaps severely depending on the level of
+                  surrounding ground.  A body-heat sensor with logger can be put
+                  into a elevated box on various styles of metal or wooden
+                  fencing, or forestry road barriers, or on stone or brick
+                  walls, or inside a locked pillar in the path verge.  This
+                  keeps the counter equipment above expected floodwater
+                  levels.<br /><br />
+                  Sometimes path furniture, fence posts and stone walls provide
+                  a way to hide a body-heat sensor, but beware tall swaying
+                  weeds which can block its view in high summer or add false
+                  counts when strong sun and wind creates fast-moving shadows. 
+                  So look for naturally weed-free locations
+                </p>
+              </div>
+
+              <div class="product-integration-section4 mb-4rem">
+                <img src="/assets/images/unstaffed.jpg" alt="" />
+              </div>
+
+              <div class="product-integration-section5 mb-4rem">
+                <img src="/assets/images/museum and gallery.jpg" alt="" />
+              </div>
+
+              <div class="product-integration-section6">
+                <h4 class="fs-lg">Museum and gallery</h4>
+                <p class="fs-sm text-light">
+                  Variety amongst external doors is immense so each door needs
+                  to be considered a special case. The photo shows a glass-sided
+                  semi-circular doorway where the sensor spans the semi-circular
+                  part, but not the double doors which unhelpfully swing
+                  inwards.<br /><br />
+                  Rotating doors are even more of a challenge — clearly a
+                  break-beam where people exit the ‘roundabout’ will work, but
+                  we have also used pressure sensor mats too inside such
+                  doors.<br /><br />
+
+                  Automatic doors are operated with optical sensors (sometimes
+                  radar) and care is needed so that the door and counter sensors
+                  do not interfere.
+                </p>
+              </div>
+
+              <div class="product-integration-section7">
+                <h4 class="fs-lg">Public libraries and TICs</h4>
+                <p class="fs-sm text-light">
+                  Book loan data can be useful, but not all library users borrow
+                  a book. They might return some, they might borrow several
+                  books, read a newspaper or use the internet, and the book data
+                  might not be amenable to analysis by date, weekday, hour of
+                  day, trends, patterns etc, unlike logger data is. Libraries
+                  and Tourist Information Centres (TICs) are similar to
+                  countryside centres when devising visitor counters at their
+                  main doors.<br /><br />
+                  Automatic doors opening outwards are a blessing as an optical
+                  sensor can be positioned inside the building, ideally very
+                  close to the door frame.
+                </p>
+              </div>
+
+              <div class="product-integration-section8 mb-4rem">
+                <img src="/assets/images/public libraries.jpg" alt="" />
+              </div>
+
+              <div class="product-integration-section9 mb-4rem">
+                <img src="/assets/images/retail and cafes.jpg" alt="" />
+              </div>
+
+              <div class="product-integration-section10">
+                <h4 class="fs-lg">Retail and cafe areas</h4>
+                <p class="fs-sm text-light">
+                  The front door is frequently the main target but one might
+                  also want to track visitor movements within inner areas. Till
+                  sales data is useful too, and more so the ‘conversion ratio’
+                  of shop footfall to sales transactions along with the average
+                  spend per visitor and the trends for both of these metrics. If
+                  the shop is at a countryside visitor centre then clearly the
+                  ratio of the car arrivals to shop footfall is a key metric.<br /><br />
+
+                  Multiply cars by 2 to get a passenger estimate. At historic
+                  monuments, the shop is where visitors go on to buy a ticket —
+                  or perhaps not. Thus the shop footfall to ticket sale ratio is
+                  of interest.
+                </p>
+              </div>
+
+              <div class="product-integration-section11">
+                <h4 class="fs-lg">Public toilets</h4>
+                <p class="fs-sm text-light">
+                  Toilets in the countryside are often of interest to Local
+                  Authorities and to the National Parks which fund them. A
+                  survey by one rural council found that usage varied from a
+                  dozen people per week in a tiny village to thousands in a
+                  touristic town near to a railway station and shops. Their aim
+                  was shut a third of them and upgrade facilities at the
+                  surviving sites. They also started charging 20p on the basis
+                  of their visitor counter results at their busiest site, photo
+                  above, which pays for an attendant during the summer
+                  months.<br /><br />
+
+                  The usual sensor approach is a body heat sensor in a box fixed
+                  above a door lintel provided that the door does not swing
+                  directly underneath it.
+                </p>
+              </div>
+
+              <div class="product-integration-section12 mb-4rem">
+                <img src="/assets/images/public toilets.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+
+    <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
+</html>
