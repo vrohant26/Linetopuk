@@ -179,6 +179,21 @@ function initSwiper() {
 }
 
 // ----------------------------
+// Mobile Menu Toggle
+// ----------------------------
+function initMobileMenu() {
+  const menuButton = document.querySelector(".mobile-menu");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (menuButton && navLinks) {
+    menuButton.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      menuButton.classList.toggle("active");
+    });
+  }
+}
+
+// ----------------------------
 // Init all
 // ----------------------------
 async function init() {
@@ -193,6 +208,7 @@ async function init() {
   ]);
 
   setupHeaderAutoHide();
+  initMobileMenu();
   initAchieveReveal();
   initAccordion();
   initTabs();

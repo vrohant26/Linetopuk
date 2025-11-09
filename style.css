@@ -1587,6 +1587,10 @@ footer .footer-content ul li {
   grid-area: 6 / 2 / 7 / 3;
 }
 
+.contact {
+  display: none !important;
+}
+
 /* BREAKPOINTS */
 
 @media (max-width: 1300px) {
@@ -1661,10 +1665,33 @@ footer .footer-content ul li {
 }
 
 @media (max-width: 1024px) {
-  .navbar .nav-links,
+  .contact {
+    display: block !important;
+  }
+
   .navbar button {
     display: none;
   }
+
+  .navbar .nav-links {
+    position: fixed;
+    /* width: 100%; */
+    right: 2rem;
+    flex-direction: column;
+    top: 100px;
+    background: white;
+    opacity: 0;
+    height: fit-content;
+    padding: 2rem 4rem;
+    transition: all 0.2s ease-in;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
   .mobile-menu {
     display: block;
   }
