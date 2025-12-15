@@ -33,7 +33,7 @@
   --color-primary-light: #3e68a7;
   --color-secondary: #005fb3;
   --color-text: #6f6f6f;
-  --color-light-text: #898995;
+  --color-light-text: #4a4a4a;
   --body-bg-color: rgb(248, 248, 248);
   --color-white: #ffffff;
   --color-black: #111111;
@@ -61,7 +61,7 @@
   --fs-md: clamp(1rem, 0.8rem + 1vw, 1.8rem);
   --lh-md: 1.5;
 
-  --fs-sm: 1rem;
+  --fs-sm: 1.2rem;
   --lh-sm: 1.6;
 
   --fs-xs: 0.875rem;
@@ -376,7 +376,8 @@ button {
   border-radius: 100px;
   width: fit-content;
   font-size: 0.875rem;
-  padding: 0.2rem 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid inherit;
 }
 
 .chip-blue {
@@ -522,6 +523,7 @@ footer .footer-content ul li a img {
 footer .footer-content ul li a {
   color: var(--color-primary) !important;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 footer .footer-content ul li a {
@@ -766,7 +768,7 @@ footer .footer-content ul li a {
 #partners .carousel-images {
   display: flex;
   gap: 1rem;
-  animation: scroll 20s linear infinite;
+  animation: scroll 50s linear infinite;
   width: fit-content; /* Allow container to fit all images */
 }
 
@@ -844,8 +846,8 @@ footer .footer-content ul li a {
   height: 100%;
   position: absolute;
   z-index: 2;
-  clip-path: circle(20% at 50% 50%);
-  transition: transform 0.5s ease;
+  /* clip-path: circle(20% at 50% 50%);
+  transition: transform 0.5s ease; */
 }
 
 #why h2 {
@@ -1084,7 +1086,13 @@ footer .footer-content ul li a {
 }
 
 #partners .carousel-images img {
-  filter: contrast(0);
+  width: 150px;
+  filter: grayscale(1);
+  transition: filter 1s ease;
+}
+
+#partners .carousel-images img:hover {
+  filter: grayscale(0);
 }
 
 footer .cta {
@@ -1372,13 +1380,13 @@ footer .footer-content ul li {
     transform: translateX(-50%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(50%);
   }
 }
 
 @keyframes marquee-left {
   0% {
-    transform: translateX(0%);
+    transform: translateX(50%);
   }
   100% {
     transform: translateX(-50%);
@@ -1589,6 +1597,11 @@ footer .footer-content ul li {
 
 .contact {
   display: none !important;
+}
+
+.border {
+  border-top: 1px solid var(--color-line);
+  padding-top: 2rem;
 }
 
 /* BREAKPOINTS */

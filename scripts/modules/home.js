@@ -1,23 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-export function gsapAnimation() {
-  // Why section animation
-  gsap.to("#why .why-banner", {
-    scrollTrigger: {
-      trigger: "#why",
-      start: "top top", // start when top of why section hits top of viewport
-      end: "+=100%", // end after scrolling 100% of the viewport height
-      pin: true, // pin the section
-      pinSpacing: true,
-      scrub: 1, // smooth scrubbing
-      markers: false, // set to true for debugging
-    },
-    clipPath: "circle(100% at 50% 50%)", // end state
-    duration: 1,
-    ease: "none",
-  });
-}
-
 export function carousels() {
   const monitoringSwiper = new Swiper("#selectMonitoringArea .swiper", {
     direction: "horizontal",
@@ -44,20 +26,5 @@ export function carousels() {
         spaceBetween: 16,
       },
     },
-  });
-}
-
-export function fallingBalls() {
-  gsap.from(".item1, .item2, .item3, .item4", {
-    scrollTrigger: {
-      trigger: ".gravity",
-      start: "top 80%",
-      toggleActions: "play none none none",
-      markers: true,
-    },
-    transform: "translateY(-200px)",
-    duration: 1.2,
-    ease: "bounce.out",
-    stagger: 0.1,
   });
 }
